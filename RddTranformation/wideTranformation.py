@@ -9,19 +9,19 @@ num2 = spark.sparkContext.parallelize([1, 7, 9, 4, 10, 15])
 
 #intersection function
 inter_num = num1.intersection(num2).collect()
-#print(inter_num)
+print(inter_num)
 
 #subtract
 subtract_num = num1.subtract(num2).collect()
-#print(subtract_num)
+#print("substract result:"+subtract_num)
 
 #Distinct
 dist_num=num1.distinct(num2).collect()
-#print(dist_num)
+#print("Result of distinct:"+dist_num)
 
 #countByvalue
-data=spark.sparkContext.parallelize([(1,2),(3,4),(3,6),(3,4)])
-print(data.collect().count())
+data=spark.sparkContext.parallelize([(1,2),(3,4),(3,6),(3,4)]).collect()
+#print(data)
 
 
 

@@ -32,7 +32,7 @@ if __name__ == '__main__':
     num1=spark.sparkContext.parallelize([5,5,4,3,2,9,2])
     num2 = spark.sparkContext.parallelize([1,7,9,4,10,15])
     num3=num1.union(num2).collect()
-    #print(num3)
+    print(num3)
 
 
 
